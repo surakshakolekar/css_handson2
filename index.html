@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandsOn 2</title>
+    <style>
+        body{
+            background: linear-gradient(to bottom right, blue, pink);  
+            border: 20px solid rgb(26, 252, 26);
+            border-style: groove;     
+        }
+        *{
+            margin: auto;
+            padding: auto;
+        }
+        .header{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+        }
+        #greet
+        {
+            font-style: italic;
+            text-align: center;
+            border: 8px solid red;
+            color: white;
+            font-size:small ;
+            background-color: black;
+            border-radius: 25px;
+            margin: auto;
+            padding: 40px 40px 40px 40px;
+            width: 20%;
+            
+        }
+
+        #Menu
+        {
+            position: absolute;
+            font-style: italic;
+            text-align: center;
+            border: 8px solid red;
+            color: white;
+            font-size:small ;
+            background-color: black;
+            border-radius: 25px;
+            margin-left: 400px;
+            margin-top: 55px;
+            padding: 30px 40px 30px 40px;
+            width: 20%;
+            
+        }
+        #Menu1
+        {
+            font-style: italic;
+            text-align: center;
+            border: 8px solid red;
+            color: white;
+            font-size:large ;
+            background-color: black;
+            border-radius: 25px;
+            margin: auto;
+            padding: 20px 40px 40px 40px;
+            width: 30%;
+            height: 10px;
+            
+        }
+        #Contact
+        {
+            font-style: italic;
+            text-align: center;
+            border: 8px solid red;
+            color: white;
+            font-size:small ;
+            background-color: black;
+            border-radius: 25px;
+            margin: auto;
+            padding: 30px 30px 40px 40px;
+            width: 20%;
+            border-spacing: 100px;
+        }
+        .Content{
+            display: flex;
+            flex-direction: row;
+           
+        }
+        #circle{
+            line-height: 320%;
+            height: 300px;
+            width: 400px;
+            border: 10px solid rgb(85, 85, 85);
+            border-radius: 800px;
+            background-color: rgb(42, 165, 155);
+            color: black;
+            padding-top: 100px;
+            text-align: center;
+        }
+        #register
+        {
+            background-color: whitesmoke;
+            text-align: center;
+            padding-left: 25%;
+            justify-content: center;
+            margin: 5%;
+            width: 350px;
+            border: 10px solid red;
+            border-style:dashed;
+            padding: 2%;
+            line-height: 20px;
+        }
+        label{
+            color: red;
+            font-size: medium;
+            font-weight: bold;
+        }
+        #row{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+       .items{
+            background-color: cyan;
+            align-items: center;
+            border: 5px solid black;
+            border-radius: 30px;
+            text-align: center;
+            width: 250px;
+            height: 250px;
+            margin: 20px;
+            padding: 10px 30px ;
+            color: blue;
+            line-height: 140%;
+       }
+</style>
+</head>
+<body>
+    <div class="header">
+        <div id="greet">
+            <h1>Welcome to our DHABA <br />where you get quality food</h1>
+        </div>
+
+        <div id="Menu">
+            <h1>Home menu review contact us </h1>
+        </div>
+
+        <div id="Contact">
+            <h1>Email: Store@gmail.com <br>if you find any complain contact on-94567*** </h1>
+        </div>
+    </div>
+
+    <div class="Content">
+        <div id="circle">
+            <h2><i>EXICTING OFFERS</i></h2><hr>
+            <h2>** GET OUR SPECIAL THALI FOR <br> ONLY 100 ONLY ON MONDAY**</h2><hr>
+            <h2>PLZ RATE US OUT OF 5</h2>
+        </div>
+        <div id="form">
+            <form id="register">
+                
+                <h2>PLEASE REGISTER HERE</h2><br><hr><br>
+                <center>
+                <label>First Name:</label><br>
+                <input type="text" placeholder="Enter your First Name" required/>
+                <br><br>
+                <label>Last Name:</label><br>
+                <input type="text" placeholder="Enter your Last Name" required/>
+                <br><br>
+                <label>Your Age:</label><br>
+                <input type="number" placeholder="Enter your Age here" />
+                <br><br>
+                <label>Email:</label><br>
+                <input type="email" placeholder="Enter your Email" required/>
+                <br><br>
+                <label  >Date of Birth:</label><br>
+                <input type="date" placeholder="DOB - dd/mm/yyyy" />
+                <br><br>
+                <label>Are you more than one person ?</label><br>
+                <input type="checkbox" required/>
+                <br><br>
+                <label>Do you have cough or cold ?</label><br>
+                <input type="checkbox" square required/>
+                <br><br>
+                <label>Click Here</label><br>
+                <input type="submit" /><br />
+                <br><br>
+                <label>Reset</label><br>
+                <input type="reset" /><br /><br>
+            </center>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div id="Menu1">
+        <h1>Menu</h1>
+    </div><br><hr>
+    <div id="row">
+        <div class="items">
+            <h1>Starter</h1><hr><br>
+            <ul>
+                <li>Paneer Tikka</li>
+                <li>Tomato Soup</li>
+                <li>Afgani Chaap</li>
+                <li>Veg Raita</li>
+                <li>Gol Gappa</li>
+                <li>Tikki</li>
+                <li>Fried Rice</li>
+            </ul>
+        </div>
+
+        <div class="items">
+            <h1>South Indian</h1><br>
+            <ul><hr>
+              <li>Masala Dosa</li>
+              <li>Idli</li>
+              <li>Sambhar</li>
+              <li>Uttapam</li>
+              <li>Mix Veg Uttapam</li>
+              <li>Vada Sambhar</li>
+              <li>Tomato Uttapam</li>
+            </ul>
+        </div>
+
+        <div class="items">
+            <h1>Indian Kitchen</h1><br>
+            <ul><hr><br>
+              <li>Shahi Paneer</li>
+              <li>Kadhai Paneer</li>
+              <li>Aloo Gobhi</li>
+              <li>Dal Makhni</li>
+              <li>Poori Sabzi</li>
+              <li>Malai Kofta</li>
+              <li>Capsicum</li>
+            </ul>
+        </div>
+
+        <div class="items">
+            <h1>Rice and Salad</h1><br>
+            <ul><hr><br>
+              <li>Plain Rice</li>
+              <li>Jeera Rice</li>
+              <li>Veg Pulaw</li>
+              <li>Veg Biryani</li>
+              <li>Cheese Fried Rice</li>
+              <li>Masala Salad</li>
+              <li>Plain Salad</li>
+            </ul>
+        </div>
+
+        <div class="items">
+            <h1>Tandoori Bread</h1><br>
+            <ul><hr><br>
+              <li>Butter Roti</li>
+              <li>Missi Roti</li>
+              <li>Onion Roti</li>
+              <li>Lacha Paratha</li>
+              <li>Paneer Paratha</li>
+              <li>Butter Naan</li>
+              <li>CHAPATI</li>
+            </ul>
+        </div>
+
+        <div class="items">
+            <h1>Beverages and Others</h1><br>
+            <ul><hr><br>
+              <li>Cold Coffee</li>
+              <li>Cold Drinks</li>
+              <li>Badam Milk</li>
+              <li>Mineral Water</li>
+              <li>Ice cream</li>
+              <li>Cake</li>
+              <li>Halwa</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
